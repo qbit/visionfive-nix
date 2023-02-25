@@ -7,7 +7,7 @@
     (importApply ./kernel/nixos-module.nix { inherit inputs; })
   ];
 
-  environment.systemPackages = with pkgs; [ mtdutils ];
+  environment.systemPackages = with pkgs; [ mtdutils nvme-cli ];
 
   boot = {
     consoleLogLevel = lib.mkDefault 7;
